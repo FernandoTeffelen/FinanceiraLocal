@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Nosso Cliente - Financeira Local</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Topo -->
+    <header>
+        <div class="logo">
+            <h1>Financeira Local</h1>
+        </div>
+        <!-- <nav class="menu-topo">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="emprestimos.html">Empréstimos</a></li>
+                <li><a href="seja-cliente.html">Seja Nosso Cliente</a></li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <!-- Menu Lateral -->
+    <aside>
+        <nav class="menu-lateral">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="emprestimos.html">Empréstimos</a></li>
+                <li><a href="seja-cliente.html">Seja Nosso Cliente</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Conteúdo da Página Seja Nosso Cliente -->
+    <main>
+        <section class="seja-cliente">
+            <h2>Seja Nosso Cliente</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="servico">Tipo de Serviço:</label>
+                <select id="servico" name="servico">
+                    <option>Empréstimo Pessoal</option>
+                    <option>Empréstimo Consignado</option>
+                    <option>Financiamento</option>
+                    <option>Antecipação de Recebíveis</option>
+                </select>
+
+                <!-- <label>
+                    <input type="checkbox" name="aposentado">
+                    Sou aposentado
+                </label> -->
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Contatos: (99) 99999-9999 | contato@financeiralocal.com.br</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>

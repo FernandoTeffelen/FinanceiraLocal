@@ -1,0 +1,296 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo do Header */
+header {
+    background-color: #1abc9c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Menu do topo */
+.menu-topo ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #16a085;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.menu-topo ul li {
+    margin: 0 15px;
+}
+
+.menu-topo ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-topo ul li a:hover {
+    background-color: white;
+    color: #16a085;
+    border-radius: 4px;
+}
+
+/* Menu lateral */
+.menu-lateral {
+    background-color: #34495e;
+    width: 220px;
+    padding-top: 8%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-lateral ul li {
+    margin: 20px 0;
+}
+
+.menu-lateral ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #1abc9c;
+    border-radius: 4px;
+}
+
+.menu-lateral ul li a.active {
+    background-color: #16a085;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    margin-left: 240px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.banner {
+    background: linear-gradient(135deg, #16a085, #1abc9c);
+    color: white;
+    padding: 60px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.banner h2 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo das seções de serviços e empréstimos */
+.servicos, .emprestimos, .emprestimo-tipo, .seja-cliente {
+    margin: 20px 0;
+    margin-bottom: 1.5%;
+}
+/* .emprestimos{
+    margin-bottom: 3%;
+} */
+
+.servicos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servico {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin-right: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servico:last-child {
+    margin-right: 0;
+}
+
+.servico img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.servico h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.servico p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #7f8c8d;
+}
+
+.servico a {
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.servico a:hover {
+    background-color: #16a085;
+}
+
+.servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulários de Simulação e Cadastro */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form label {
+    font-weight: bold;
+    color: #34495e;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #16a085;
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #1abc9c;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .menu-lateral {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .menu-lateral ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .servicos {
+        flex-direction: column;
+    }
+
+    .servico {
+        margin-bottom: 20px;
+    }
+
+    .servico:last-child {
+        margin-right: 0;
+    }
+}
